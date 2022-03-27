@@ -49,7 +49,7 @@ h1,h2,h3{
       background: #F9F8F9;
   }
 .hero-text{
-    margin-left:55px;
+    margin-left:160px;
     width: 55%;
 }  
 .hero-title{
@@ -119,7 +119,7 @@ services area
 }
 .services-text{
     margin-top: 174px;
-    margin-left: 55px;
+    margin-left: 160px;
     width: 419.31px;
     height: 302px;
 }
