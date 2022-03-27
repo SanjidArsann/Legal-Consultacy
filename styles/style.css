@@ -32,8 +32,16 @@ h1,h2,h3{
  .menu-link{
      text-decoration: none;
      font-weight: 400;
-    font-size: 12px;
+    font-size: 20px;
     color: #2D2F30;
+ }
+ .menu-item:hover{
+     text-decoration: none;
+     font-weight: 400;
+    font-size: 20px;
+    color: #2D2F30;
+    transform: scale(1.02);
+    transition: transform 1s;
  }
  .search-bar{
      margin-top: 40px;
