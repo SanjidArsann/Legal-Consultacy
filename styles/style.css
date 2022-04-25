@@ -1,6 +1,10 @@
-/*---------
- Common Style 
- -----------*/
+/* common style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,196 +12,143 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Playfair Display';
+    margin: 0;
+    padding: 0;
 }
 
-/*---------
- header style
- ----------- */
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 100px;
-    margin-bottom: 25px;
-}
-
-.logo {
-    margin-top: 32px;
-}
-
-.menu {
-    display: flex;
-    margin-top: 38px;
-}
-
-.menu-item {
-    padding: 0px 28px;
+li {
     list-style-type: none;
 }
 
-.menu-link {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 20px;
-    color: #2D2F30;
+/* header section started  */
+.header {
+    margin: 20px;
+}
+
+.menu-item {
+    text-align: center;
 }
 
 .menu-item:hover {
     text-decoration: none;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #2D2F30;
     transform: scale(1.02);
     transition: transform 1s;
 }
 
-.search-bar {
-    margin-top: 40px;
+.menu-link {
+    text-decoration: none;
+    color: black;
 }
 
-/*------------
-  Hero area styles
-  ------------ */
+.search-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
-.hero {
-    display: flex;
-    width: 100%;
+/* hero section started */
+
+.hero-area {
     background: #F9F8F9;
 }
 
-.hero-text {
-    margin-left: 100px;
-    width: 55%;
-}
-
 .hero-title {
-
     font-weight: 700;
-    font-size: 90px;
-    width: 891px;
-    margin-top: 150px;
-    margin-bottom: 0;
-    line-height: 120%;
-    letter-spacing: 0.02em;
+    font-size: 35px;
     color: #094B72;
+    padding-top: 20px;
 }
 
 .hero-description {
-    margin-top: 46px;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 158%;
+    font-size: 16px;
     color: #4F4F4F;
-    margin-bottom: 71px;
+    margin-bottom: 30px;
 }
 
-.btn {
+.hero-btn {
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     color: #F9F8F9;
-    padding: 20px 40px;
+    padding: 10px 20px;
     background-color: #094B72;
     border: 1px solid #094B72;
     border-radius: 8px;
 }
 
-.btn:hover {
+.hero-btn:hover {
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     color: #094B72;
-    padding: 20px 40px;
-    background-color: #fff;
+    padding: 10px 20px;
+    background-color: #F9F8F9;
     border: 1px solid #094B72;
     border-radius: 8px;
 }
 
 .hero-trust {
-    margin-top: 144px;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 16px;
     color: #8B8C8C;
+    margin-top: 30px;
 }
 
 .hero-logos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 30px;
-    width: 350px;
-}
-
-.hero-logo {
-    width: 150px;
-    Height: 28.02px
-}
-
-.hero-banner {
-    width: 45%;
+    padding-bottom: 30px;
 }
 
 .banner {
-    width: 549px;
-    height: 900.94px;
+    display: none;
 }
 
-/* ----------
-services area 
--------------*/
+/* service area style starterd */
 
-.sevice-area {
+.service-area {
     background-color: #F2FCFF;
-}
-
-.services {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-}
-
-.services-text {
-    margin-top: 174px;
-    margin-left: 100px;
-    width: 419.31px;
-    height: 302px;
+    padding-bottom: 30px;
 }
 
 .services-title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .services-description {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #8B8C8C;
-    width: 100%;
-    height: 144px;
-    line-height: 36px;
-    letter-spacing: 0.5px;
+    padding-bottom: 20px;
 }
 
 .services-item {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 30px;
-    grid-column-gap: 30px;
-    margin: 126px 100px 126px 80px;
 }
 
 .service {
-    width: 256px;
-    height: 253px;
     background-color: #FCFCFC;
     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
 }
 
 .service:hover {
-    width: 256px;
-    height: 253px;
     background-color: #F9F8F9;
     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
@@ -217,46 +168,35 @@ services area
 
 .service-description {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: #8B8C8C;
 }
 
-/* ----------
-Slack Area  
-------------*/
+/* slack area style started */
+
 .slack-area {
     background-color: #1282A6;
 }
 
 .slack {
     text-align: center;
-    padding-top: 50px;
-}
-
-.slack-parameter {
-    display: flex;
-    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .slack-title {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-weight: 900;
-    font-size: 48px;
+    font-weight: 700;
+    font-size: 30px;
     color: #FFFFFF;
 }
 
 .slack-description {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 16px;
     color: #FFFFFF;
-    margin-top: 0px;
-    margin-bottom: 7px;
 }
 
 .number {
-    height: 64px;
-    width: 255px;
     font-weight: 800;
     font-size: 48px;
     color: #FFFFFF;
@@ -264,96 +204,72 @@ Slack Area
 }
 
 .parameter-despription {
-    margin-top: 0px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
-    margin-bottom: 55px;
 }
 
-/*-----------------
- Client Testimonial
- ---------------- */
-.testimonial {
+/* testimonial section started */
+
+.testimonial-area {
     background-color: #F4FBFF;
+    padding-bottom: 30px;
 }
 
 .testimonial-title {
-    margin-top: 0;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 30px;
     color: #2D2F30;
 }
 
-.review-area {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 100px;
-    padding-bottom: 90px;
-}
-
 .review {
-    width: 540px;
-    height: 220px;
     background: #FCFCFC;
     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 .review:hover {
-    width: 540px;
-    height: 220px;
     background: #FCFCFC;
     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     transform: scale(1.05);
     transition: transform 1s;
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 .review-title {
     font-weight: 700;
     font-size: 18px;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    padding-top: 20px;
     color: #151617;
     text-align: center;
-
 }
 
 .review-description {
     font-weight: 400;
     font-size: 14px;
     color: #4F4F4F;
-    padding: 0px 30px;
-    margin-bottom: 0px;
+    padding: 20px;
     text-align: center;
-    line-height: 24px;
 }
 
 .review-author {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0px;
 }
 
 .author-image {
-    margin-top: 20px;
     margin-right: 16px;
 }
 
 .author-name {
-    margin-top: 30px;
+    margin-top: 15px;
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .author-position {
@@ -362,66 +278,41 @@ Slack Area
     margin-top: 0px;
 }
 
-.question {
-    display: flex;
-}
-
-.question-text {
-    margin-left: 100px;
+/* question section started */
+.question-area {
+    padding-bottom: 30px;
 }
 
 .question-title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 30px;
     color: #2D2F30;
-    margin: 35px 0px;
+    padding-top: 30px;
 }
 
 .question-description {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 16px;
     color: #4F4F4F;
-    margin-right: 22px;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .ques-banner {
-    border-radius: 0px 0px 0px 40px;
+    display: none;
 }
 
-/* -----------
-Footer Area   
-------------*/
+/* footer section satrted */
+
 .footer-area {
     background-color: #0F6E8C;
-}
-
-.top-footer {
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 80px;
-}
-
-.footer-logo {
-    width: 50%;
-    margin-top: 70px;
+    padding-top: 30px;
 }
 
 .footer-item {
-    width: 50%;
     display: flex;
-    margin-top: 80px;
-}
-
-.footer-description a {
-    display: block;
-    margin-right: 100px;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: #EEEFF4;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer-title {
@@ -430,45 +321,44 @@ Footer Area
     color: #F4F5F7;
 }
 
+.footer-description a {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #EEEFF4;
+    text-align: center;
+}
+
 .last-area {
     background-color: #05546D;
 }
 
-.bottom-footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 100px;
-}
-
 .bottom-description {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     color: #D9DBE1;
-    margin-top: 35px;
+}
+
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .social-media {
-    margin: 25px 0px;
+    margin: 5px 0px;
 }
 
 .social-media a {
     color: #fff;
     text-decoration: none;
-    margin: 0px 10px;
+    margin: 0px 2px;
 }
 
 .social-media a:hover {
     color: #38f0b8;
     text-decoration: none;
-    margin: 0px 10px;
+    margin: 0px 2px;
 
-}
-
-
-/*-----------
- Media Quary 
- -----------*/
-
-.container {
-    display: none;
 }
